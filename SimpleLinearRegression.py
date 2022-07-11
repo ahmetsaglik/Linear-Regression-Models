@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-ad = pd.read_csv("sample_data/Advertising.csv", usecols=[1,2,3,4]) 
+ad = pd.read_csv("Advertising.csv", usecols=[1,2,3,4]) 
 df = ad.copy()
 
 
