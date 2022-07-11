@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 
-data = pd.read_csv("sampleDatas/positions.csv")
+data = pd.read_csv("datas/positions.csv")
 
 x = data['Level'].values.reshape(-1,1)
 y = data['Salary'].values.reshape(-1,1)

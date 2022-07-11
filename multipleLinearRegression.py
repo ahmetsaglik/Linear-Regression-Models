@@ -6,7 +6,7 @@ import pandas as pd
 
 from sklearn.linear_model import LinearRegression
 
-data = pd.read_csv("sampleDatas/insurance.csv")
+data = pd.read_csv("datas/insurance.csv")
 
 print(data.columns)
 

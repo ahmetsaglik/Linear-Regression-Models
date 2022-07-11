@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn.tree import DecisionTreeRegressor
 
 
-data = pd.read_csv("sampleDatas/positions.csv")
+data = pd.read_csv("datas/positions.csv")
 
 level = data['Level'].values.reshape(-1,1)
 salary = data.iloc[:, 2].values.reshape(-1,1)
