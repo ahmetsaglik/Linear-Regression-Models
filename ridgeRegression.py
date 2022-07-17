@@ -89,8 +89,7 @@ ridge_cv.fit(X_train, y_train)
 print("Optimum lambda: " + str(ridge_cv.alpha_))
 
 ## Final Model
-ridge_tuned = Ridge(alpha=ridge_cv.alpha_,
-                   normalize=True).fit(X_train, y_train)
+ridge_tuned = Ridge(alpha=ridge_cv.alpha_, normalize=True).fit(X_train, y_train)
 
 print("Post CV Test RMSE: " + str(np.sqrt(mean_squared_error(y_test, ridge_tuned.predict(X_test)))))
 
